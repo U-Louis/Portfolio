@@ -20,7 +20,9 @@ export class NavbarComponent implements OnInit {
     toabout(){
         document.getElementById("about").scrollIntoView({ block: 'end',  behavior: 'smooth' });
     }
-
+    tohome(){
+        document.getElementById("home").scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    }
 
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
