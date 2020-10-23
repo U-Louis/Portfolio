@@ -14,6 +14,14 @@ export class NavbarComponent implements OnInit {
         this.sidebarVisible = false;
     }
 
+    toportfolio(){
+        document.getElementById("portfolio").scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    }
+    toabout(){
+        document.getElementById("about").scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    }
+
+
     ngOnInit() {
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
