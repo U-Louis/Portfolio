@@ -14,6 +14,8 @@ import * as Rellax from 'rellax';
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
+    value = "louis.urbani@yahoo.com";
+    
     data : Date = new Date();
 
     page = 4;
